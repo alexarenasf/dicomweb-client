@@ -160,6 +160,8 @@ class DICOMwebClient {
       //   return(percentComplete);
       // };
 
+      request.withCredentials = true;
+
       if ("data" in options) {
         request.send(options.data);
       } else {
